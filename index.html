@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churn Predictor</title>
+</head>
+<body>
+    <h2>Enter Customer Features</h2>
+    <form action="/predict" method="post">
+        <!-- Replace with your actual feature fields -->
+        <input type="text" name="tenure" placeholder="Tenure" required>
+        <input type="text" name="MonthlyCharges" placeholder="Monthly Charges" required>
+        <!-- Add other input fields here -->
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
